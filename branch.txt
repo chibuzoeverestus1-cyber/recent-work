@@ -1,0 +1,37 @@
+# recent-work
+A Git branch is a lightweight, movable pointer to a specific commit, allowing developers to diverge from the main line of development and work on new features or bug fixes in an isolated environment without affecting the main codebase. 
+Key Concepts
+Isolation: Branches enable parallel development, so multiple people can work on different tasks simultaneously without interfering with the stable, production-ready code on the main (or master) branch.
+Lightweight: Unlike other version control systems that might copy all files, Git branches are simply references to commit objects, making branch creation and switching operations nearly instantaneous.
+Pointers: When you make a new commit on a branch, the branch pointer automatically moves forward to point to that latest snapshot of changes.
+Merging: Once work on a branch is complete and tested, the changes can be merged back into the main branch via a pull request process. 
+Example Usage
+Here is a common workflow for using branches via the command line:
+View existing branches: The current branch is indicated by an asterisk (*).
+bash
+git branch
+# Output might show:
+# * main
+Create a new feature branch: This command creates a new branch named feature-xyz but keeps you on the current branch (main).
+bash
+git branch feature-xyz
+Switch to the new branch: This updates your working directory to match the files in the feature-xyz branch.
+bash
+git checkout feature-xyz
+# or the modern alternative:
+git switch feature-xyz
+Create and switch in one command: This is a common shortcut to immediately start working on a new branch.
+bash
+git checkout -b new-feature-name
+# or the modern alternative:
+git switch -c new-feature-name
+Work and commit changes: After making changes in your new branch, stage and commit them as usual.
+bash
+git add .
+git commit -m "Added the new feature"
+Switch back to the main branch:
+bash
+git checkout main
+Delete a branch: After you have merged your changes back into main, you can delete the no-longer-needed branch.
+bash
+git branch -d feature-xyzgit

@@ -1,5 +1,5 @@
 # recent-work
-he git status command is a fundamental Git utility that displays the current state of the working directory and the staging area. It helps you monitor file changes and is an essential tool for deciding your next steps in the development workflow. 
+the git status command is a fundamental Git utility that displays the current state of the working directory and the staging area. It helps you monitor file changes and is an essential tool for deciding your next steps in the development workflow. 
 What Information Does git status Provide?
 Running git status will typically provide the following key pieces of information:
 Current Branch: It indicates which branch you are currently on (e.g., On branch main or On branch master).

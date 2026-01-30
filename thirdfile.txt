@@ -1,0 +1,3 @@
+print('hello, git')
+Create a new file:
+echo "print('Hello, Git!')" > hello.py
